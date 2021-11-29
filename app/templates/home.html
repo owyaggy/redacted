@@ -3,6 +3,7 @@
 
   <head>
     <title> StoryForge </title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
 
   <body>
@@ -10,7 +11,7 @@
         Hey {{name}}!
     </h1>
     <h3>Not you? Logout here!</h3>
-    <form action="/"> <!-- go back to login page -->
+    <form class = "logout" action="/"> <!-- go back to login page -->
       <input type="submit" value="Logout" name="sub2">
     </form>
     <div id = "forge">
@@ -29,9 +30,9 @@
     </div>
 
     {%for story in story_col%}
-      <i><h3>{{story[0]}}</i></h3>
+        <i><h3>{{story[0]}}</i></h3>
       {%for field in story[1] %}
-        {{story[2][loop.index0]}}
+          {{story[2][loop.index0]}}
       {%endfor%}
     {%endfor%}
 

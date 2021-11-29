@@ -1,0 +1,62 @@
+/* COLORS
+#36213e - Dark purple
+#554971 - Cyber grape
+#63768d - Slate grape
+#8ac6d0 - Middle blue
+#b8f3ff - Blizzard blue
+ */
+
+body {
+    background-color: #36213e;
+    font-family: "Comic Sans MS", sans-serif;
+    color: #8ac6d0;
+    margin: 20px;
+}
+
+a {
+    background-color: #554971;
+    color: #b8f3ff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition-duration: 0.7s;
+}
+
+a:hover {
+    background-color: #8ac6d0;
+    transition-duration: 0.7s;
+    color: #36213e;
+}
+
+form {
+    color: #b8f3ff;
+    background: #554971;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    border-color: #63768d;
+    border-width: 5px;
+}
+
+input, textarea {
+    background-color: #8ac6d0;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    color: #36213e;
+    transition-duration: 0.7s;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+input:hover, textarea:hover {
+    background-color: #b8f3ff;
+    transition-duration: 0.7s;
+}
+
+.logout {
+    padding: 0;
+    background-color: #36213e;
+    margin: 0;
+}
